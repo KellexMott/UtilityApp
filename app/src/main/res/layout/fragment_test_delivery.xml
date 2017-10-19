@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    tools:context="com.musanga.hackersguild.musanga.FeedbackActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode : MotorBike"/>
+
+            <EditText
+                android:id="@+id/pickup_address"
+                style="@style/editText" />
+
+            <EditText
+                android:id="@+id/delivery_address"
+                style="@style/editText" />
+            <EditText
+                android:id="@+id/res2"
+                style="@style/editText" />
+            <EditText
+                android:id="@+id/res1"
+                style="@style/editText"
+                />
+
+            <EditText
+                android:id="@+id/packageDetails"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/input_field_background"
+                android:hint="@string/package_description"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp" />
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.musanga.hackersguild.musanga.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/contentMain">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraBearing="0"
+        map:cameraTargetLat="-15.3875259"
+        map:cameraTargetLng="28.3228165"
+        map:cameraTilt="30"
+        map:cameraZoom="2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_delivery_mode"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+        <!--Delivery Modes Buttons-->
+        <LinearLayout
+            android:id="@+id/deliveryModes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--Bicycle-->
+                <ImageView
+                    android:id="@+id/bike"
+                    style="@style/imageView"
+                    app:srcCompat="@drawable/bike_icon"
+                    android:gravity="center" />
+            <!--Motor Bike-->
+                <ImageView
+                    android:id="@+id/motorbike"
+                    style="@style/imageView"
+                    app:srcCompat="@drawable/motor_icons"
+                    />
+            <!--Car-->
+                <ImageView
+                    android:id="@+id/car"
+                    style="@style/imageView"
+                    app:srcCompat="@drawable/car_icon"
+                    />
+            <!--Truck-->
+                <ImageView
+                    android:id="@+id/truck"
+                    style="@style/imageView"
+                    app:srcCompat="@drawable/truck_icon"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

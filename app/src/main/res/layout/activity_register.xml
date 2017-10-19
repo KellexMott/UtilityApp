@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    tools:context="com.musanga.hackersguild.musanga.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingBottom="45dp">
+
+            <EditText
+                android:id="@+id/RegName"
+                style="@style/editText"
+                android:hint="@string/name"
+                />
+
+            <EditText
+                android:id="@+id/phoneNumberId"
+                style="@style/editText"
+                android:hint="@string/phone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/editText"
+                android:hint="@string/email"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textEmailAddress" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/genderText"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/gender"
+                    android:textSize="18sp"
+                    android:paddingLeft="12dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/RegUserName"
+                android:hint="@string/user_name"
+                style="@style/editText"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                style="@style/editText" />
+
+            <EditText
+                android:id="@+id/cPassword"
+                style="@style/editText"
+                android:inputType="textPassword"
+                android:hint="@string/confirm_password"/>
+
+            <Button
+                android:id="@+id/resgisterButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/btn_login"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
