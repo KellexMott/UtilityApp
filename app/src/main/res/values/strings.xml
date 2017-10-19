@@ -1,84 +1,103 @@
 <resources>
-    <string name="app_name">UtilityApp</string>
-    <!--activity_about -->
-    <string name="about_us">Musanga is an on-demand delivery app that is transforming the way goods are transported in cities. It connects retail stores with local couriers, enabling anyone to deliver anything at any time.
+    <string name="app_name">Musanga</string>
+    <string name="home_label">Home</string>
+    <string name="deliverydetails_lebel">Delivery Details</string>
+    <string name="history_label">History</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_label">About</string>
+    <string name="feedback_label">Feedback</string>
+    <string name="profile_label">Profile</string>
+    <string name="contact_label">Contact Us</string>
+    <string name="help_label">Help</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_test">Test</string>
+
+        <!--activity_about -->
+        <string name="about_us">Musanga is an on-demand delivery app that is transforming the way goods are transported in cities. It connects retail stores with local couriers, enabling anyone to deliver anything at any time.
 We’re powering the future of African logistics, helping both small stores and big businesses
 move their goods through cities faster than anyone ever imagined. </string>
+        <!--activity_contacts -->
+        <string name="address">Address description/details \n E.g Plot 6569, Mumana Rd Olympia \n Ext black gate</string>
+        <string name="about_us_header">Who we are</string>
+        <string name="musanga_deliveries">Musanga Deliveries</string>
+        <string name="musanga_logistics">Musanga Logistics</string>
+        <string name="musanga_lg">Musanga LG</string>
+        <string name="email_address">sales@musangalogistics.com</string>
+        <string name="phone">Phone</string>
+        <string name="phone_number">+260965000059</string>
 
-    <!--activity_contacts -->
-    <string name="address">Address description/details \n E.g Plot 6569, Mumana Rd Olympia \n Ext black gate</string>
-    <string name="about_us_header">Who we are</string>
-    <string name="musanga_deliveries">Musanga Deliveries</string>
-    <string name="musanga_logistics">Musanga Logistics</string>
-    <string name="musanga_lg">Musanga LG</string>
-    <string name="email_address">sales@musangalogistics.com</string>
-    <string name="phone">Phone</string>
-    <string name="phone_number">+260965000059</string>
+        <!--activity_delivery_details -->
+        <string name="motor_bike">Motor Bike</string>
+        <string name="package_description">Package description \\n e.g Black and white Handbag</string>
+        <string name="pick_up">- Pickup - is where the package is  - Delivery - is where the packge is going</string>
+        <string name="pickup_infor">If the address is not found Please search for nearest street/road name instead  E.g Mumana road \\nthen provide address details in the address details field.</string>
+        <string name="msg_package_recipient">Here you enter Name and Phone number of the person receiving the package.</string>
 
-    <!--activity_delivery_details -->
-    <string name="motor_bike">Motor Bike</string>
-    <string name="package_description">Package description \\n e.g Black and white Handbag</string>
-    <string name="pick_up">- Pickup - is where the package is  - Delivery - is where the packge is going</string>
-    <string name="pickup_infor">If the address is not found Please search for nearest street/road name instead  E.g Mumana road \\nthen provide address details in the address details field.</string>
-    <string name="msg_package_recipient">Here you enter Name and Phone number of the person receiving the package.</string>
+        <!--activity_about -->
+        <string name="msg_dont_show">Don\'t show again</string>
+        <string name="header_recipient_tip">RECIPIENT TIP :</string>
+        <string name="header_address_tip">ADDRESS TIP :</string>
+        <string name="done">done</string>
 
-    <!--activity_about -->
-    <string name="msg_dont_show">Don\'t show again</string>
-    <string name="header_recipient_tip">RECIPIENT TIP :</string>
-    <string name="header_address_tip">ADDRESS TIP :</string>
-    <string name="done">done</string>
-
-    <string name="hint_recipient_phone">Recipient phone</string>
-    <string name="hint_recipient_name">Recipient Name</string>
-    <string name="hint_pickup_address">Pickup address</string>
-    <string name="hint_delivery_address">Delivery Address</string>
-    <string name="mode">Mode :</string>
-    <string name="submit">Submit</string>
-
-
-    <string name="description">Description</string>
-    <string name="subject">Subject</string>
-
-    <!--activity_history -->
-    <string name="delivery_not_made">You Have not made any deliveries yet</string>
-    <string name="updating_data">Updating data please wait</string>
+        <string name="hint_recipient_phone">Recipient phone</string>
+        <string name="hint_recipient_name">Recipient Name</string>
+        <string name="hint_pickup_address">Pickup address</string>
+        <string name="hint_delivery_address">Delivery Address</string>
+        <string name="mode">Mode :</string>
+        <string name="submit">Submit</string>
 
 
-    <string name="email">Email</string>
-    <string name="date">Thurdays, 20 August 2020   12:00 </string>
+        <string name="description">Description</string>
+        <string name="subject">Subject</string>
 
-    <!--activity_login -->
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="no_account">Don\'t have an account?</string>
-
-    <!--activity_profile -->
-    <string name="edit_profile">Edit profile</string>
-    <string name="update_profile">Update profile</string>
-    <string name="name">Name</string>
-
-    <!--activity_register -->
-    <string name="gender">Gender</string>
-    <string name="user_name">User Name</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="register">Register</string>
+        <!--activity_history -->
+        <string name="delivery_not_made">You Have not made any deliveries yet</string>
+        <string name="updating_data">Updating data please wait</string>
 
 
-    <string name="delivery_address">20 sianjalika Road</string>
-    <string name="pickup_address">20 pick road</string>
+        <string name="email">Email</string>
+        <string name="date">Thursdays, 20 August 2020   12:00 </string>
 
-    <!--activity_reset -->
-    <string name="reset_password">Enter your email and we will send a new a password to your inbox</string>
-    <string name="request_new_passwrod">Request a new passwrod</string>
+        <!--activity_login -->
+        <string name="password">Password</string>
+        <string name="login">Login</string>
+        <string name="no_account">Don\'t have an account?</string>
 
-    <!--information_dialog -->
-    <string name="thank_you">Thank you for delivering with Musanga</string>
-    <string name="tracking_msg">You should receive a message for tracking your package as soon as it starts moving to the destination.</string>
+        <!--activity_profile -->
+        <string name="edit_profile">Edit profile</string>
+        <string name="update_profile">Update profile</string>
+        <string name="name">Name</string>
 
-    <!--success_dialog -->
-    <string name="ok">OK</string>
-    <string name="submitted_successfully">Request has been submitted successfully</string>
+        <!--activity_register -->
+        <string name="gender">Gender</string>
+        <string name="user_name">User Name</string>
+        <string name="confirm_password">Confirm Password</string>
+        <string name="register">Register</string>
 
-    <string name="forgot_password">Forgot Password</string>
-    <string name="choose_delivery_mode">Choose Delivery Mode</string>
+
+        <string name="delivery_address">20 sianjalika Road</string>
+        <string name="pickup_address">20 pick road</string>
+
+        <!--activity_reset -->
+        <string name="reset_password">Enter your email and we will send a new a password to your inbox</string>
+        <string name="request_new_password">Request a new password</string>
+
+        <!--information_dialog -->
+        <string name="thank_you">Thank you for delivering with Musanga</string>
+        <string name="tracking_msg">You should receive a message for tracking your package as soon as it starts moving to the destination.</string>
+
+        <!--success_dialog -->
+        <string name="ok">OK</string>
+        <string name="submitted_successfully">Request has been submitted successfully</string>
+
+        <string name="forgot_password">Forgot Password</string>
+        <string name="choose_delivery_mode">Choose Delivery Mode</string>
 </resources>
+

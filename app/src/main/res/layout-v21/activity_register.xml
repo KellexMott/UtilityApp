@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    tools:context="com.musanga.hackersguild.musanga.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:paddingBottom="45dp">
+
+            <EditText
+                android:id="@+id/RegName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_field_background"
+                android:hint=" Name"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/ic_person_24dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                />
+
+            <EditText
+                android:id="@+id/phoneNumberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/ic_call_24dp"
+                android:background="@drawable/input_field_background"
+                android:hint=" Phone Number"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_field_background"
+                android:hint=" Email"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/ic_markunread_24dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:inputType="textEmailAddress" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/genderText"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:text="Gender"
+                    android:textSize="18sp"
+                    android:paddingLeft="12dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/RegUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_field_background"
+                android:hint=" User Name"
+                android:paddingBottom="12dp"
+                android:drawableLeft="@drawable/ic_person_24dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_field_background"
+                android:hint=" Password"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/ic_vpn_key_24dp"
+                android:inputType="textPassword"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp" />
+
+            <EditText
+                android:id="@+id/cPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/ic_vpn_key_24dp"
+                android:background="@drawable/input_field_background"
+                android:hint=" Confirm Password"
+                android:paddingBottom="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp" />
+
+            <Button
+                android:id="@+id/resgisterButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/btn_login"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

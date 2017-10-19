@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_margin="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mode_background"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:text="Mode :"/>
+
+                <TextView
+                    android:id="@+id/modeOfDeliveryPlaceHolder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="Motor Bike"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/imageDrawable"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/motor_icons"
+                    android:transitionName="mode_transition"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/pickupAddressCard"
+                android:clickable="true"
+                android:layout_width="250dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="62dp">
+
+                <fragment
+                    android:id="@+id/pickup_place_autocomplete_fragment"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/frag" />
+                <TextView
+                    android:id="@+id/pickupLocationAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field_background"
+                    android:drawableLeft="@drawable/ic_location_on_24dp"
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:hint="Pickup Address"
+                    android:textColor="@color/grey" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="250dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_field_background"
+                app:cardElevation="0dp"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="138dp">
+                <fragment
+                    android:id="@+id/place_autocomplete_fragment"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/frag"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+                <TextView
+                    android:id="@+id/destinationAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@drawable/input_field_background"
+                    android:drawableLeft="@drawable/ic_location_on_24dp"
+                    android:gravity="left|center"
+                    android:padding="5dp"
+                    android:hint="Delivery Address"
+                    android:textColor="@color/grey"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="8dp" />
+            </android.support.v7.widget.CardView>
+            <EditText
+                android:id="@+id/addressDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_field_background"
+                android:layout_marginTop="20dp"
+                android:hint="Address description/details \n E.g Plot 6569, Mumana Rd Olympia \n Ext black gate"
+                android:textSize="14sp"
+                android:gravity="top|start"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/recipientName"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginTop="20dp"
+                android:hint="Recipient Name"
+                android:textSize="14sp"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/recipientPhone"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/input_field_background"
+                android:layout_marginTop="20dp"
+                android:hint="Recipient phone"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/packageDetails"
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input_field_background"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Package description \n E.g Black and white Handbag"
+                android:padding="10dp"
+                android:selectAllOnFocus="false"
+                android:textSize="14sp"
+                android:layout_weight="0.29" />
+            <Button
+                android:id="@+id/rdSubmit"
+                android:layout_width="240dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_login"
+                android:layout_gravity="center"
+                android:text="done"
+                android:layout_marginTop="40dp"
+                android:textColor="?android:attr/fastScrollTextColor" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/transparentBg"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:clickable="true"
+            android:background="@color/transparentAccent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="151dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="gone"
+            app:indicatorName="BallClipRotateMultipleIndicator"
+            app:indicatorColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/tooltip"
+            android:layout_width="262dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="209dp"
+            android:background="@drawable/flippop"
+            android:clickable="true"
+            android:paddingEnd="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="25dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="ADDRESS TIP : "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:paddingStart="10dp"
+                android:text="- Pickup - is where the package is \n- Delivery - is where the packge is going"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="italic|bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="78dp"
+                android:paddingStart="10dp"
+                android:text="If the address is not found Please search for nearest street/road name instead  e.g Mumana road \nthen provide address details in the address details field."
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="italic|bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox_dont_show"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:onClick="onCheckboxClicked"
+                android:text="Don't show again"
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_cancel_black_24dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/recipientTooltip"
+            android:layout_width="262dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/popup"
+            android:paddingEnd="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="25dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="RECIPIENT TIP : "
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:paddingStart="10dp"
+                android:text="Here you enter Name and Phone number of the person receiving the package."
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="italic|bold" />
+
+            <CheckBox
+                android:id="@+id/recipient_checkbox_dont_show"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="13dp"
+                android:onClick="onRecipientCheckboxClicked"
+                android:text="Don't show again"
+                android:textColor="@color/white"
+                android:buttonTint="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/recipient_closeBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/ic_cancel_black_24dp"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+</ScrollView>
