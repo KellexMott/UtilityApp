@@ -21,8 +21,8 @@
 
         <!--activity_about -->
         <string name="about_us">Musanga is an on-demand delivery app that is transforming the way goods are transported in cities. It connects retail stores with local couriers, enabling anyone to deliver anything at any time.
-We’re powering the future of African logistics, helping both small stores and big businesses
-move their goods through cities faster than anyone ever imagined. </string>
+        We’re powering the future of African logistics, helping both small stores and big businesses
+        move their goods through cities faster than anyone ever imagined. </string>
         <!--activity_contacts -->
         <string name="address">Address description/details \n E.g Plot 6569, Mumana Rd Olympia \n Ext black gate</string>
         <string name="about_us_header">Who we are</string>
@@ -99,5 +99,8 @@ move their goods through cities faster than anyone ever imagined. </string>
 
         <string name="forgot_password">Forgot Password</string>
         <string name="choose_delivery_mode">Choose Delivery Mode</string>
+    <string name="social">Social</string>
+    <string name="create">Create</string>
+
 </resources>
 

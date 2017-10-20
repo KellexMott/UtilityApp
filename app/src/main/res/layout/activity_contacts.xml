@@ -5,43 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#eaeadb"
     android:layout_centerInParent="true"
     tools:context="com.musanga.hackersguild.musanga.LoginActivity">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:background="#eaeadb"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
                 android:textAllCaps="true"
-                android:textColor="@color/colorOrange"
+                android:textColor="@color/colorAccent"
                 android:layout_marginBottom="8dp"
-                android:text="Social"/>
+                android:text="@string/social"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
                 android:orientation="vertical"
-                android:background="@color/colorWhite">
+                android:background="@color/whiteColor">
 
                 <TextView
                     android:id="@+id/fb_link"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
-                    android:layout_marginLeft="7dp"
-                    android:drawableLeft="@drawable/logo_facebook"
+                    android:layout_marginStart="7dp"
+                    android:drawableStart="@drawable/logo_facebook"
                     android:drawablePadding="5dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:clickable="true"
@@ -52,11 +47,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="27dp"
-                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
                     android:drawablePadding="5dp"
                     android:clickable="true"
                     android:textColor="@color/colorPrimaryDark"
-                    android:drawableLeft="@drawable/square_twitter"
+                    android:drawableStart="@drawable/square_twitter"
                     android:text="@string/musanga_logistics"
                     android:onClick="twitterListener"/>
                 <TextView
@@ -64,13 +59,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="27dp"
-                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
                     android:layout_marginBottom="7dp"
                     android:drawablePadding="5dp"
                     android:clickable="true"
                     android:textColor="@color/colorPrimaryDark"
                     android:autoLink="web"
-                    android:drawableLeft="@drawable/square_linkedin"
+                    android:drawableStart="@drawable/square_linkedin"
                     android:text="@string/musanga_lg"
                     android:onClick="linkedinListener"
                     />
@@ -80,61 +75,68 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
                 android:textAllCaps="true"
-                android:textColor="@color/colorOrange"
+                android:textColor="@color/colorAccent"
                 android:layout_marginBottom="8dp"
                 android:text="@string/email"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
                 android:orientation="vertical"
-                android:background="@color/colorWhite">
+                android:background="@color/whiteColor">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:clickable="true"
                     android:autoLink="email"
-                    android:drawableLeft="@drawable/about_email_black"
+                    android:drawableStart="@drawable/about_email_black"
                     android:text="@string/email_address"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
                 android:textAllCaps="true"
-                android:textColor="@color/colorOrange"
-                android:layout_marginBottom="8dp"
+                android:textColor="@color/colorAccent"
                 android:text="@string/phone"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
                 android:orientation="vertical"
-                android:background="@color/colorWhite">
+                android:background="@color/whiteColor">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginLeft="7dp"
-                    android:layout_marginBottom="7dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:autoLink="phone"
-                    android:drawableLeft="@drawable/about_local_phone"
+                    android:drawableStart="@drawable/about_local_phone"
                     android:linksClickable="true"
                     android:text="@string/phone_number"/>
 
             </LinearLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-
 </LinearLayout>
